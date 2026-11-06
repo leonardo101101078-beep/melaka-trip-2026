@@ -126,9 +126,9 @@ a:focus-visible,summary:focus-visible{outline:2px solid var(--gold);outline-offs
 }
 @media (prefers-reduced-motion:reduce){.r-route{transition:none}}
 
-#view-nyonya[hidden]{display:none}
+#view-nyonya[hidden],#view-colonial[hidden]{display:none}
 .r-split.n-devs,.r-split.n-devs:has(>.r-fig:first-child){grid-template-columns:minmax(0,230px) minmax(0,1fr)}
-#view-nyonya .r-tl::before{left:84px}#view-nyonya .r-tl li{grid-template-columns:98px minmax(0,1fr)}#view-nyonya .r-tl li::after{left:79px}#view-nyonya .r-y{padding-right:24px;white-space:nowrap}
+#view-nyonya .r-tl::before{left:84px}#view-nyonya .r-tl li{grid-template-columns:98px minmax(0,1fr)}#view-nyonya .r-tl li::after{left:79px}#view-nyonya .r-y,#view-colonial .r-y{padding-right:24px;white-space:nowrap}#view-colonial .r-tl::before{left:112px}#view-colonial .r-tl li{grid-template-columns:126px minmax(0,1fr)}#view-colonial .r-tl li::after{left:107px}
 .r-sec .n-stats,.n-stats{grid-template-columns:repeat(4,1fr)}
 .n-hb .r-hb-r{grid-template-columns:104px minmax(0,1fr)}.n-hb .r-hb-r>div{min-width:0}.n-hb .r-hb-r b{white-space:nowrap}
 .n-venn svg{max-width:640px}.n-venn text{font-family:'Noto Sans TC',sans-serif;fill:#33241C;text-anchor:middle}.n-venn .h{font-size:18px;font-weight:700}.n-venn .s{font-size:15px}
@@ -145,7 +145,7 @@ a:focus-visible,summary:focus-visible{outline:2px solid var(--gold);outline-offs
 .n-steps{list-style:none;counter-reset:s;display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:10px;margin:12px 0;padding:0}.n-steps li{counter-increment:s;background:var(--paper);border:1px solid var(--line);border-radius:8px;padding:12px;margin:0;min-width:0;position:relative}.n-steps li::before{content:counter(s);display:inline-flex;width:22px;height:22px;align-items:center;justify-content:center;border-radius:50%;background:var(--brick);color:#fff;font-size:.76rem;margin-right:6px}.n-steps span{font-size:.74rem;color:var(--mute)}.n-steps strong{display:block;margin-top:6px;font-weight:500}.n-steps p{margin:4px 0 0;font-size:.82rem;line-height:1.55}
 .n-vs{margin:14px 0}.n-vs-r{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1.2fr) minmax(0,1.3fr);gap:10px;padding:9px 6px;border-top:1px solid var(--line);font-size:.86rem;line-height:1.5;background:var(--paper)}.n-vs-r.h{border-top:0;font-weight:700;background:#EFE5D3;border-radius:6px 6px 0 0}.n-vs-r .a{font-weight:500}.n-vs-r .r-v{display:block;width:max-content;margin-top:3px;font-weight:400}
 @media (max-width:860px){
- #view-nyonya [id]{scroll-margin-top:98px!important}
+ #view-nyonya [id],#view-colonial [id]{scroll-margin-top:98px!important}
  .r-split.n-devs,.r-split.n-devs:has(>.r-fig:first-child){grid-template-columns:minmax(0,1fr)}.n-devs .r-fig{max-width:220px}
  .r-sec .n-stats,.n-stats{grid-template-columns:repeat(2,minmax(0,1fr))}
  .n-rg-ax,.n-rg-r{grid-template-columns:minmax(0,1fr)}.n-rg-ax>div:first-child{display:none}.n-rg-r .t{grid-column:1}
@@ -183,16 +183,16 @@ a:focus-visible,summary:focus-visible{outline:2px solid var(--gold);outline-offs
 }
 </style></head><body>
 <div id="bar"></div>
-<nav id="side" aria-label="章節"><div class="brand">馬六甲・麻坡<br>新山攻略<small>2026/11/7–11/9</small></div><div class="tabs" role="tablist" aria-label="分頁"><a id="tab-guide" href="#guide">旅遊攻略</a><a id="tab-report" href="#report">鄭和與馬六甲</a><a id="tab-nyonya" href="#nyonya">娘惹文化</a></div><div class="sub" id="sub-guide"><a href="#top">三天概覽</a><a href="#melaka">馬六甲</a><a href="#encore">又見馬六甲</a><a href="#muar">麻坡</a><a href="#jb">新山</a><a href="#road">路上須知</a><a href="#src">來源</a></div><div class="sub" id="sub-report" hidden><a href="#report">先看重點</a><a href="#r-who">鄭和是誰</a><a href="#r-link">與馬六甲的關連</a><a href="#r-sites">古蹟查證</a><a href="#r-baba">峇峇娘惹</a><a href="#r-fleet">艦隊規模</a><a href="#r-ships">寶船對比</a><a href="#r-voyage">遠航成就</a><a href="#r-modern">近代發展</a><a href="#r-limits">查證限制</a><a href="#r-src">來源</a></div><div class="sub" id="sub-nyonya" hidden><a href="#nyonya">先看重點</a><a href="#n-terms">名詞釐清</a><a href="#n-origin">起源</a><a href="#n-dev">馬六甲的發展</a><a href="#n-others">不只華人</a><a href="#n-culture">文化特色</a><a href="#n-food">娘惹菜</a><a href="#n-faith">信仰</a><a href="#n-vs">馬六甲與新加坡</a><a href="#n-trip">旅行怎麼看</a><a href="#n-limits">查證限制</a><a href="#n-src">來源</a></div></nav>
+<nav id="side" aria-label="章節"><div class="brand">馬六甲・麻坡<br>新山攻略<small>2026/11/7–11/9</small></div><div class="tabs" role="tablist" aria-label="分頁"><a id="tab-guide" href="#guide">旅遊攻略</a><a id="tab-report" href="#report">鄭和與馬六甲</a><a id="tab-nyonya" href="#nyonya">娘惹文化</a><a id="tab-colonial" href="#colonial">殖民時代</a></div><div class="sub" id="sub-guide"><a href="#top">三天概覽</a><a href="#melaka">馬六甲</a><a href="#encore">又見馬六甲</a><a href="#muar">麻坡</a><a href="#jb">新山</a><a href="#road">路上須知</a><a href="#src">來源</a></div><div class="sub" id="sub-report" hidden><a href="#report">先看重點</a><a href="#r-who">鄭和是誰</a><a href="#r-link">與馬六甲的關連</a><a href="#r-sites">古蹟查證</a><a href="#r-baba">峇峇娘惹</a><a href="#r-fleet">艦隊規模</a><a href="#r-ships">寶船對比</a><a href="#r-voyage">遠航成就</a><a href="#r-modern">近代發展</a><a href="#r-limits">查證限制</a><a href="#r-src">來源</a></div><div class="sub" id="sub-nyonya" hidden><a href="#nyonya">先看重點</a><a href="#n-terms">名詞釐清</a><a href="#n-origin">起源</a><a href="#n-dev">馬六甲的發展</a><a href="#n-others">不只華人</a><a href="#n-culture">文化特色</a><a href="#n-food">娘惹菜</a><a href="#n-faith">信仰</a><a href="#n-vs">馬六甲與新加坡</a><a href="#n-trip">旅行怎麼看</a><a href="#n-limits">查證限制</a><a href="#n-src">來源</a></div><div class="sub" id="sub-colonial" hidden><a href="#colonial">先看重點</a><a href="#c-timeline">時間軸</a><a href="#c-pt">葡萄牙</a><a href="#c-nl">荷蘭</a><a href="#c-uk">英國</a><a href="#c-trip">這趟在哪看</a><a href="#c-limits">查證限制</a><a href="#c-src">來源</a></div></nav>
 <main>
 <div id="view-guide">
 <header class="hero g-hero"><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ef/Melaka_%28Malacca%29_River.jpg/1280px-Melaka_%28Malacca%29_River.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail" alt="馬六甲河與河畔建築" width="7477" height="4987" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()"><div class="eyebrow">SINGAPORE → MUAR → MELAKA</div><h1>馬六甲・麻坡・新山 攻略</h1>
-<dl><dt>日期</dt><dd>2026/11/7（六）– 11/9（一），兩晚都住馬六甲</dd><dt>路線</dt><dd>新加坡 → 麻坡（午餐）→ 馬六甲 → 新加坡。新山本次不排，只作參考</dd><dt>查證日</dt><dd>2026-11-04</dd></dl><p class="g-cr">圖：馬六甲河。Engin Akyurt · CC0 · <a href="https://commons.wikimedia.org/wiki/File:Melaka_(Malacca)_River.jpg" target="_blank" rel="noopener">Wikimedia Commons</a></p></header>
+<dl><dt>日期</dt><dd>2026/11/7（六）– 11/9（一），兩晚都住馬六甲</dd><dt>路線</dt><dd>新加坡 → 打車過新山關卡、租車 → 麻坡（午餐）→ 馬六甲 → 新山還車 → 新加坡</dd><dt>查證日</dt><dd>2026-11-04</dd></dl><p class="g-cr">圖：馬六甲河。Engin Akyurt · CC0 · <a href="https://commons.wikimedia.org/wiki/File:Melaka_(Malacca)_River.jpg" target="_blank" rel="noopener">Wikimedia Commons</a></p></header>
 <div class="wrap">
 <div class="r-stats g-stats"><div><b>3 天 2 晚</b><span>11/7–11/9，兩晚住馬六甲</span></div><div><b>約 240 公里</b><span>新加坡到馬六甲</span></div><div><b>2.7–4 小時 ⚠️</b><span>各來源估的車程，不含排隊</span></div><div><b>最長 3 小時</b><span>今年 9 月高峰的過關等候，不是這次的預估</span></div><div><b>約 24 個雨天</b><span>11 月長期平均，全年最濕的月份</span></div></div>
 <div class="alert"><p><strong>先看這句</strong>：這趟撞上屠妖節連假。ICA 已發公告，<a href="https://littlebigreddot.com/ica-woodlands-tuas-checkpoint-traffic-deepavali-long-weekend-6-9-november-2026/" target="_blank" rel="noopener">11/6–11/9 兀蘭和大士關卡預計車流量大</a>，所以出發和回程的時間最要緊。</p></div>
 <p class="legend">標記：🏅 必去　🔶 可選　<span class="warn">⚠️</span> 資料有衝突或未查證，出發前再確認</p>
-<section id="top" style="scroll-margin-top:52px"><h2 class="sec-t">三天概覽</h2><div class="days g-days"><article class="day"><h3>11/7（六）</h3><ol class="g-steps"><li class=""><span>清晨</span><div><a href="#road">出發過關</a></div></li><li class=""><span>中午</span><div><a href="#muar">麻坡吃午餐、走老城 2–3 小時</a></div></li><li class=""><span>下午</span><div><a href="#melaka">到馬六甲</a></div></li><li class=""><span>晚上</span><div>雞場街夜市</div></li></ol></article><article class="day"><h3>11/8（日，屠妖節）</h3><ol class="g-steps"><li class=""><span>白天</span><div><a href="#melaka">老城：紅屋、聖保羅山、峇峇娘惹博物館、青雲亭</a></div></li><li class=""><span>16:00 左右</span><div>出發</div></li><li class="k"><span>17:30</span><div><strong>看<a href="#encore">《又見馬六甲》</a></strong></div></li><li class=""><span>之後</span><div>回老城吃晚餐、夜遊河</div></li></ol></article><article class="day"><h3>11/9（一，補假）</h3><ol class="g-steps"><li class=""><span>返程</span><div>吃完早餐上午就走，直接回新加坡。</div></li><li class="w"><span>注意</span><div>收假日關卡可能很塞，不再繞路</div></li></ol></article></div><h3 id="g-map">路線地圖</h3><div class="r-split g-route"><svg class="g-map" viewBox="0 0 832.0 480.0" role="img" aria-label="示意地圖：新加坡經大士第二通道北上，到 Pagoh 下交流道，經麻坡到馬六甲"><rect width="832.0" height="480.0" fill="#DCEBEC"/><path d="M-96 -96L-94 254L-72 274L-5 284L27 297L102 354L127 382L146 413L172 499L246 567L277 576L437 576L272 576L928 576L-96 576ZM3 151L20 177L24 194L11 214L6 244L-31 267L-64 261L-74 253L-95 208L-93 169L-80 154L-50 157L-19 136ZM233 499L218 509L186 472L171 412L169 385L178 369L211 385L238 421ZM253 349L256 390L184 351L148 347L121 336L103 317L104 302L110 296L246 333ZM425 576L323 565L269 550L241 531L245 512L253 500L258 468L272 454L328 500L417 541ZM469 538L460 547L444 545L380 497L348 486L321 479L328 445L349 443L416 474L438 491ZM552 480L554 498L532 494L517 473L538 453ZM744 438L764 452L781 443L777 466L757 499L724 492L714 473L722 452L736 452ZM923 427L928 541L920 550L897 543L887 524L890 518L873 510L884 497L877 480L817 491L816 463L852 438L873 433L896 438ZM726 390L678 411L624 392L642 360L678 353L735 379ZM-96 -96L928 -96L-96 -96L566 -96L532 -96L571 -92L588 -72L676 -10L682 13L726 92L806 265L828 342L826 363L792 379L773 364L760 326L730 296L733 350L709 353L677 344L638 352L592 390L570 391L544 337L530 321L383 242L329 222L271 162L143 96L61 32L26 -8L-58 -43L-94 -84L-96 -96L-96 576Z" fill="#EFE5D3" stroke="#BFAF96" stroke-width="1.5"/>
+<section id="top" style="scroll-margin-top:52px"><h2 class="sec-t">三天概覽</h2><div class="days g-days"><article class="day"><h3>11/7（六）</h3><ol class="g-steps"><li class=""><span>09:00</span><div>打車<a href="#road">過關</a>，可能排 1–3 小時</div></li><li class=""><span>11:30</span><div>新山取車</div></li><li class=""><span>13:30</span><div><a href="#muar">麻坡</a>午餐（太晚就跳過）</div></li><li class=""><span>16:00</span><div>到<a href="#melaka">馬六甲</a>入住</div></li><li class="k"><span>17:45</span><div><strong>海峽清真寺</strong>，日落約 18:55 ⚠️</div></li><li class=""><span>19:30</span><div>雞場街夜市小吃</div></li></ol></article><article class="day"><h3>11/8（日，屠妖節）</h3><ol class="g-steps"><li class=""><span>07:45</span><div>咖椰吐司早餐</div></li><li class=""><span>08:30</span><div>和諧街：印度廟、清真寺、青雲亭</div></li><li class=""><span>10:00</span><div>峇峇娘惹博物館</div></li><li class=""><span>11:15</span><div>鄭和文化館</div></li><li class=""><span>12:45</span><div>娘惹菜午餐</div></li><li class=""><span>14:15</span><div><a href="#c-nl">紅屋、基督教堂</a></div></li><li class="k"><span>17:30</span><div><strong><a href="#encore">《又見馬六甲》</a></strong></div></li><li class=""><span>19:30</span><div>僑生府晚餐</div></li></ol></article><article class="day"><h3>11/9（一，補假）</h3><ol class="g-steps"><li class=""><span>08:00</span><div><a href="#c-pt">聖保羅山、A Famosa</a></div></li><li class=""><span>10:30</span><div>出發回新山</div></li><li class=""><span>14:30</span><div>還車、過關</div></li><li class="w"><span>注意</span><div>收假日關卡很塞</div></li></ol></article></div><h3 id="g-map">路線地圖</h3><div class="r-split g-route"><svg class="g-map" viewBox="0 0 832.0 480.0" role="img" aria-label="示意地圖：新加坡經大士第二通道北上，到 Pagoh 下交流道，經麻坡到馬六甲"><rect width="832.0" height="480.0" fill="#DCEBEC"/><path d="M-96 -96L-94 254L-72 274L-5 284L27 297L102 354L127 382L146 413L172 499L246 567L277 576L437 576L272 576L928 576L-96 576ZM3 151L20 177L24 194L11 214L6 244L-31 267L-64 261L-74 253L-95 208L-93 169L-80 154L-50 157L-19 136ZM233 499L218 509L186 472L171 412L169 385L178 369L211 385L238 421ZM253 349L256 390L184 351L148 347L121 336L103 317L104 302L110 296L246 333ZM425 576L323 565L269 550L241 531L245 512L253 500L258 468L272 454L328 500L417 541ZM469 538L460 547L444 545L380 497L348 486L321 479L328 445L349 443L416 474L438 491ZM552 480L554 498L532 494L517 473L538 453ZM744 438L764 452L781 443L777 466L757 499L724 492L714 473L722 452L736 452ZM923 427L928 541L920 550L897 543L887 524L890 518L873 510L884 497L877 480L817 491L816 463L852 438L873 433L896 438ZM726 390L678 411L624 392L642 360L678 353L735 379ZM-96 -96L928 -96L-96 -96L566 -96L532 -96L571 -92L588 -72L676 -10L682 13L726 92L806 265L828 342L826 363L792 379L773 364L760 326L730 296L733 350L709 353L677 344L638 352L592 390L570 391L544 337L530 321L383 242L329 222L271 162L143 96L61 32L26 -8L-58 -43L-94 -84L-96 -96L-96 576Z" fill="#EFE5D3" stroke="#BFAF96" stroke-width="1.5"/>
 <polyline points="678.4,380.8 617.6,380.8 342.4,128.0 278.4,160.0 176.0,112.0" class="g-rt"/>
 <g class="g-mk "><circle cx="678.4" cy="380.8" r="15"/><text x="678.4" y="386.8" class="n">1</text><text x="672.4" y="424.8" class="l">新加坡</text></g><g class="g-mk e3"><circle cx="617.6" cy="380.8" r="15"/><text x="617.6" y="386.8" class="n">2</text><text x="593.6" y="388.8" class="l">大士第二通道</text></g><g class="g-mk "><circle cx="342.4" cy="128.0" r="15"/><text x="342.4" y="134.0" class="n">3</text><text x="366.4" y="118.0" class="l">Pagoh 下交流道</text></g><g class="g-mk "><circle cx="278.4" cy="160.0" r="15"/><text x="278.4" y="166.0" class="n">4</text><text x="276.4" y="206.0" class="l">麻坡</text></g><g class="g-mk "><circle cx="176.0" cy="112.0" r="15"/><text x="176.0" y="118.0" class="n">5</text><text x="170.0" y="86.0" class="l">馬六甲</text></g>
 <g class="g-mk off"><circle cx="659.2" cy="339.2" r="9"/><text x="659.2" y="295.2" class="l e2">新山</text><text x="659.2" y="321.2" class="l e2">本次不排</text></g></svg><ol class="g-legs"><li><span>1 → 2</span><strong>大士第二通道</strong><p>過路費約 S$2.10，雙向都收</p></li><li><span>2 → 4</span><strong>大士到麻坡</strong><p>約 183 公里、2 小時，不含過關排隊。下 Pagoh，到市區約 28 公里、26 分鐘</p></li><li><span>4 → 5</span><strong>麻坡到馬六甲（5 號公路）</strong><p>約 46 公里、41 分鐘；⚠️ 可能太樂觀，抓 1 小時以上</p></li><li><span>5 → 1</span><strong>11/9 回程</strong><p>上午直接回新加坡。全程約 240 公里</p></li></ol></div>
@@ -952,16 +952,149 @@ a:focus-visible,summary:focus-visible{outline:2px solid var(--gold);outline-offs
 </ul></div></details>
 <p class="r-note">內文與摺疊區都保留原始連結。標記與來源層級同 <a href="#r-baba">鄭和分頁</a>。</p>
 </section></div>
-</div><div id="r-tip" role="status"></div></main>
+</div>
+<div id="view-colonial" hidden>
+<header class="r-hero"><div class="r-hero-img"><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/7/76/KITLV_-_101099_-_Kleingrothe%2C_C.J._-_Medan_-_Porta_de_Santiago_of_the_destroyed_fortress_A_Famosa_at_Malacca_%28Melaka%29_in_Malaysia_-_circa_1905.tif/lossy-page1-1280px-KITLV_-_101099_-_Kleingrothe%2C_C.J._-_Medan_-_Porta_de_Santiago_of_the_destroyed_fortress_A_Famosa_at_Malacca_%28Melaka%29_in_Malaysia_-_circa_1905.tif.jpg" alt="約 1905 年的 Porta de Santiago，A Famosa 要塞僅存的城門" width="1626" height="1071" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.closest('figure,.r-thumb').classList.add('r-noimg');this.remove()"></div><div class="r-hero-t"><div class="eyebrow">COLONIAL MELAKA · 查證日 2026-11-06</div><h1>殖民時代</h1><p>葡萄牙、荷蘭、英國輪流來過。葡萄牙留下了人，荷蘭留下了城，英國留下了衰落和獨立。</p><span class="r-cr r-cr-h">圖：約 1905 年的 Porta de Santiago，要塞已被拆除。<span class="r-cr">C.J. Kleingrothe · 公有領域 · <a href="https://commons.wikimedia.org/wiki/File:KITLV_-_101099_-_Kleingrothe,_C.J._-_Medan_-_Porta_de_Santiago_of_the_destroyed_fortress_A_Famosa_at_Malacca_(Melaka)_in_Malaysia_-_circa_1905.tif" target="_blank" rel="noopener">Wikimedia Commons</a></span></span></div></header>
+<div class="wrap r-wrap">
+<div class="r-stats n-stats">
+<div><b>130 年</b><span>葡萄牙統治，1511–1641</span></div><div><b>約 160 年</b><span>荷蘭統治，1641–1795、1818–1825</span></div><div><b>約 130 年</b><span>英國統治，1825–1957</span></div><div><b>1 道門</b><span>1807 年拆要塞後僅存</span></div>
+</div>
+<section class="r-key"><h2 class="sec-t">先看重點</h2><ul>
+<li><strong>葡萄牙打斷了馬來蘇丹國。</strong> 1511 年攻下馬六甲，蘇丹國結束，王儲逃往麻坡。留下的不只是遺址，還有一群人：葡萄牙村的 Kristang 社群。</li>
+<li><strong>荷蘭把馬六甲當成守海峽的據點，不是主要港口。</strong> 東印度公司的重心在巴達維亞，刻意把貿易導過去，1660 年代馬六甲的貿易已經衰退。但紅廣場一帶的城市面貌是荷蘭時期留下的。</li>
+<li><strong>英國拆了要塞，也讓馬六甲讓位給新加坡。</strong> 1807 年拆除 A Famosa，只留一道城門。1824 年英荷條約後正式接手，之後港口逐漸被新加坡取代。</li>
+<li><strong>紅屋不是一開始就紅。</strong> 原本漆成白色，後來才漆紅。漆紅的年代來源說法不一。</li>
+<li><strong>獨立的日期是在馬六甲宣布的。</strong> 1956 年 2 月 20 日，東姑阿都拉曼在今天的 Padang Pahlawan 宣布獨立日期。</li>
+</ul></section>
+<p class="legend">⚠️ 來源衝突或證據弱　💭 我的推論，不是來源原話。<a href="#c-limits">查證限制</a></p>
+
+<section id="c-timeline" class="r-sec"><h2>時間軸</h2>
+<ol class="r-tl"><li><span class="r-y">1511</span><div><strong>葡萄牙攻佔</strong><p>阿爾布克爾克率軍攻下馬六甲，蘇丹國結束，王儲逃到麻坡。同年 11 月，載著戰利品的 Flor de la Mar 在蘇門答臘外海沉沒。</p></div></li>
+<li><span class="r-y">1521</span><div><strong>山頂的教堂</strong><p>葡萄牙人在山上建教堂，就是今天聖保羅山上的遺址。</p></div></li>
+<li><span class="r-y">1641</span><div><strong>荷蘭接手</strong><p>荷蘭在柔佛協助下趕走葡萄牙人。</p></div></li>
+<li><span class="r-y">約 1650–1660</span><div><strong>紅屋</strong><p>荷蘭市政廳 Stadthuys 建成。<span class="warn">⚠️</span> 建成年份來源從 1641–1660、1650 到 1660 都有。</p></div></li>
+<li><span class="r-y">1670</span><div><strong>城門刻上年份</strong><p>荷蘭修復要塞，在城門加上東印度公司徽章和「ANNO 1670」，今天仍看得到。</p></div></li>
+<li><span class="r-y">1678</span><div><strong>荷蘭人口報告</strong><p>記錄馬六甲華人 716 人，其中 290 人是奴隸，是研究娘惹起源最早的硬資料（<a href="#n-origin">見娘惹分頁</a>）。</p></div></li>
+<li><span class="r-y">1753</span><div><strong>基督教堂</strong><p>完工，紀念荷蘭統治一百年。</p></div></li>
+<li><span class="r-y">1795–1818</span><div><strong>英國代管</strong><p>英國暫時接管，1818 年交還荷蘭。</p></div></li>
+<li><span class="r-y">1807</span><div><strong>拆除要塞</strong><p>英國在 8 月 10 日拆除 A Famosa，只留下 Porta de Santiago。</p></div></li>
+<li><span class="r-y">1824</span><div><strong>英荷條約</strong><p>荷蘭以馬六甲交換英屬明古魯（蘇門答臘）。</p></div></li>
+<li><span class="r-y">1826</span><div><strong>海峽殖民地</strong><p>與新加坡、檳城同列。之後河口淤積、新加坡崛起，港口衰落。</p></div></li>
+<li><span class="r-y">1886</span><div><strong>鐘樓</strong><p>紅廣場的鐘樓落成，紀念華商陳明水（Tan Beng Swee）。</p></div></li>
+<li><span class="r-y">1956</span><div><strong>宣布獨立日期</strong><p>2 月 20 日，東姑阿都拉曼在今 Padang Pahlawan 宣布，紀錄稱有 10 萬人到場。</p></div></li>
+<li><span class="r-y">1957</span><div><strong>殖民結束</strong><p>英國直轄殖民地結束，成為馬來亞聯合邦一州。</p></div></li>
+</ol>
+</section>
+
+<section id="c-pt" class="r-sec"><h2>葡萄牙（1511–1641）：征服、信仰與留下來的人</h2>
+<p><strong>影響</strong></p>
+<ul>
+<li><strong>終結蘇丹國：</strong> 1511 年攻下馬六甲，王儲逃往麻坡，蘇丹國的統治結束。</li>
+<li><strong>天主教進來：</strong> 1521 年在山頂建教堂，就是今天聖保羅山上的遺址。</li>
+<li><strong>混血社群：</strong> 16、17 世紀伊比利亞人與馬來女性通婚，後代就是 Kristang 人。</li>
+<li><strong>留在馬來語裡的字：</strong> <a href="https://en.wiktionary.org/wiki/meja" target="_blank" rel="noopener">meja（桌子）來自 mesa</a>、bendera（旗子）來自 bandeira、<a href="https://biblioasia.nlb.gov.sg/vol-19/issue-1/apr-jun-2023/portuguese-legacy-southeast-asia" target="_blank" rel="noopener">jendela（窗戶）來自 janela</a>、keju（起司）來自 queijo、garpu（叉子）來自 garfo。</li>
+</ul>
+<p><strong>現在看得到的</strong></p>
+<div class="r-tbl"><table><thead><tr><th>地方</th><th>看什麼</th><th>這趟</th></tr></thead><tbody>
+<tr><td>聖保羅山</td><td>1521 年教堂只剩外牆，沒有屋頂，牆邊靠著後來的荷蘭墓碑</td><td>11/9 早上</td></tr>
+<tr><td>Porta de Santiago</td><td>葡萄牙要塞僅存的城門，現況大多是荷蘭時期修的</td><td>11/9 早上</td></tr>
+<tr><td>海事博物館</td><td>Flor de la Mar 的複製船。原船 <a href="https://en.wikipedia.org/wiki/Flor_de_la_Mar" target="_blank" rel="noopener">1511 年 11 月 20 日在蘇門答臘外海遇暴風沉沒</a>，載著馬六甲的財寶，至今沒有找到。<span class="warn">⚠️</span> 網路上的財寶估值差很多，不可靠</td><td>沒排</td></tr>
+<tr><td>葡萄牙村</td><td><a href="https://en.wikipedia.org/wiki/Portuguese_Settlement,_Malacca" target="_blank" rel="noopener">約 1,000 名 Kristang 人</a>，Papiá Kristang 已經瀕危。1949 年起爭取土地永久產權未果。每年 6 月 29 日前後有 <a href="https://www.thestar.com.my/lifestyle/travel/2024/07/15/melaka039s-san-pedro-festival-celebrates-identity-culture-and-fishing-heritage" target="_blank" rel="noopener">Festa San Pedro</a>，替漁船祈福</td><td>沒排，要叫車</td></tr>
+</tbody></table></div>
+</section>
+
+<section id="c-nl" class="r-sec"><h2>荷蘭（1641–1825）：一座紅色的城</h2>
+<p><strong>影響</strong></p>
+<ul>
+<li><strong>守海峽，不做大港：</strong> <a href="https://en.wikipedia.org/wiki/Dutch_Malacca" target="_blank" rel="noopener">巴達維亞的東印度公司官員不願改善馬六甲的錫貿易，反而把貿易導向巴達維亞</a>。<a href="https://colonialvoyage.com/?p=3080" target="_blank" rel="noopener">1660 年代馬六甲的貿易已經衰退</a>。</li>
+<li><strong>行政中心：</strong> 紅屋是荷蘭市政廳，<span class="warn">⚠️</span> <a href="https://en.wikipedia.org/wiki/Stadthuys" target="_blank" rel="noopener">據信是東方現存最古老的荷蘭建築</a>，但也有來源把這個頭銜給基督教堂。</li>
+<li><strong>華人社群有了組織：</strong> 荷蘭人設華人甲必丹，青雲亭在 17 世紀荷蘭時期創建。1678 年的人口報告記錄華人 716 人。</li>
+<li><strong>新教教堂：</strong> 基督教堂 <a href="https://asiaforvisitors.com/malaysia/peninsula/melaka/town-square/" target="_blank" rel="noopener">1753 年完工，紀念荷蘭統治一百年</a>，被稱為馬來西亞仍在使用的最古老新教教堂。</li>
+</ul>
+<p><strong>現在看得到的</strong></p>
+<div class="r-tbl"><table><thead><tr><th>地方</th><th>看什麼</th><th>這趟</th></tr></thead><tbody>
+<tr><td>紅屋與紅廣場</td><td>荷蘭市政廳。<a href="https://en.wikipedia.org/wiki/Stadthuys" target="_blank" rel="noopener">原本磚牆會滲水，抹灰後漆成白色</a>，後來才漆成紅色。<span class="warn">⚠️</span> 漆紅的時間：<a href="https://www.travelfish.org/sight_profile/malaysia/peninsular_malaysia/melaka/melaka/1556" target="_blank" rel="noopener">有來源說 1920 年代由英國人漆紅</a>，也有來源沒寫年份</td><td>11/8 下午</td></tr>
+<tr><td>基督教堂</td><td>1753 年完工。<span class="warn">⚠️</span> 有來源說 1911 年漆紅以配合廣場，單一來源</td><td>11/8 下午</td></tr>
+<tr><td>城門上的「ANNO 1670」</td><td><a href="https://en.wikipedia.org/wiki/A_Famosa" target="_blank" rel="noopener">荷蘭修復要塞後加上的徽章和年份</a>。一道葡萄牙人的門，刻著荷蘭人的年份</td><td>11/9 早上</td></tr>
+<tr><td>聖保羅山的荷蘭墓碑</td><td>立在葡萄牙教堂的牆邊</td><td>11/9 早上</td></tr>
+<tr><td>青雲亭</td><td>華人的廟，荷蘭時期創建。<span class="warn">⚠️</span> 創建年份有約 1645 年和 1673 年前後兩說</td><td>11/8 早上</td></tr>
+</tbody></table></div>
+</section>
+
+<section id="c-uk" class="r-sec"><h2>英國（1795–1957）：拆城、讓位、留下一片草地</h2>
+<p><strong>影響</strong></p>
+<ul>
+<li><strong>拆了要塞：</strong> <a href="https://en.wikipedia.org/wiki/A_Famosa" target="_blank" rel="noopener">1807 年 8 月 10 日拆除，只留一道城門</a>。<span class="warn">⚠️</span> 誰保住城門說法不一：有來源說是 Raffles 到訪後叫停，也有說是負責拆除的總督 Farquhar，或 Raffles 與 Lord Minto（<a href="https://www.malaysia-traveller.com/fortress-of-malacca.html" target="_blank" rel="noopener">Malaysia Traveller</a>）。</li>
+<li><strong>讓位給新加坡：</strong> 1824 年英荷條約，荷蘭以馬六甲換英屬明古魯；1826 年起與新加坡、檳城同屬<a href="https://en.wikipedia.org/wiki/Straits_Settlements" target="_blank" rel="noopener">海峽殖民地</a>。19 世紀河口淤積，加上<a href="https://www.britannica.com/place/Melaka-Malaysia" target="_blank" rel="noopener">新加坡崛起</a>，港口衰落。</li>
+<li><strong>峇峇娘惹成了中間人：</strong> <a href="https://escholarship.org/uc/item/67q2984p" target="_blank" rel="noopener">英方依賴會說英語的土生華人與新移民溝通</a>。1890 年代帶著資本的新移民能直接與英方談判，土生華人的優勢開始流失。</li>
+<li><strong>橡膠：</strong> 20 世紀初馬六甲出身的<a href="https://en.wikipedia.org/wiki/Tan_Chay_Yan" target="_blank" rel="noopener">陳齊賢</a>開創大規模種植橡膠，陳禎祿也從橡膠業起家。</li>
+<li><strong>獨立的起點：</strong> <a href="https://www.nst.com.my/amp/news/2016/08/168980/shedding-light-historic-monument" target="_blank" rel="noopener">1956 年 2 月 20 日在今 Padang Pahlawan 宣布獨立日期</a>，1957 年<a href="https://en.wikipedia.org/wiki/Crown_Colony_of_Malacca" target="_blank" rel="noopener">殖民地結束</a>。</li>
+</ul>
+<p><strong>現在看得到的</strong></p>
+<div class="r-tbl"><table><thead><tr><th>地方</th><th>看什麼</th><th>這趟</th></tr></thead><tbody>
+<tr><td>紅廣場的鐘樓</td><td><a href="https://asiaforvisitors.com/malaysia/peninsula/melaka/town-square/" target="_blank" rel="noopener">1886 年建，紀念華商陳明水</a>。英國時代、華人出資</td><td>11/8 下午</td></tr>
+<tr><td>維多利亞女王噴泉</td><td>紅廣場上。<span class="warn">⚠️</span> 完工有 1901 和 1904 兩種說法</td><td>11/8 下午</td></tr>
+<tr><td>Porta de Santiago</td><td>英國拆城後留下的那道門</td><td>11/9 早上</td></tr>
+<tr><td>Padang Pahlawan</td><td>宣布獨立日期的草地，在紅廣場附近</td><td>沒排，可順路</td></tr>
+</tbody></table></div>
+<p class="r-note">💭 紅廣場是三個時代疊在一起的地方：荷蘭人蓋的紅屋，英國時代的鐘樓和噴泉，鐘樓還用一位華商的名字。</p>
+</section>
+
+<section id="c-trip" class="r-sec"><h2>這趟在哪裡看</h2>
+<div class="r-tbl"><table><thead><tr><th>時間</th><th>地方</th><th>對應時代</th></tr></thead><tbody>
+<tr><td>11/8 早上</td><td>青雲亭</td><td>荷蘭時期的華人社群</td></tr>
+<tr><td>11/8 下午</td><td>紅屋、基督教堂、鐘樓、噴泉</td><td>荷蘭、英國</td></tr>
+<tr><td>11/9 早上</td><td>聖保羅山、Porta de Santiago</td><td>葡萄牙、荷蘭、英國都有</td></tr>
+</tbody></table></div>
+<p>行程細節見<a href="#top">三天概覽</a>。</p>
+</section>
+
+<section id="c-limits" class="r-sec"><h2>查證限制</h2>
+<ul>
+<li><strong>紅屋漆紅的年份：</strong> 沒有一致說法，只有一個來源寫 1920 年代。</li>
+<li><strong>誰保住城門：</strong> 來源各說各話，沒有找到原始檔案。</li>
+<li><strong>葡萄牙語借詞：</strong> 詞源主要依 Wiktionary 和 BiblioAsia，沒有讀到學術詞典。sekolah（學校）的來源沒查到，所以不列。</li>
+<li><strong>荷蘭時期的貿易衰退：</strong> 主要依維基百科和 Colonial Voyage，時間點有 1660 年代與 1700 年前後兩種說法。</li>
+<li><strong>大眾來源為主：</strong> 這一頁多數資料來自維基百科與旅遊網站，引用時要保留「據信」「來源不一」的語氣。</li>
+</ul>
+</section>
+
+<section id="c-src" class="r-sec"><h2>來源</h2>
+<details class="r-fold"><summary>展開全部來源</summary><div class="r-fold-b">
+<ul class="r-num">
+<li>1. <a href="https://en.wikipedia.org/wiki/A_Famosa" target="_blank" rel="noopener">維基百科：A Famosa</a></li>
+<li>2. <a href="https://www.malaysia-traveller.com/fortress-of-malacca.html" target="_blank" rel="noopener">Malaysia Traveller：Fortress of Malacca</a></li>
+<li>3. <a href="https://en.wikipedia.org/wiki/Stadthuys" target="_blank" rel="noopener">維基百科：Stadthuys</a></li>
+<li>4. <a href="https://www.travelfish.org/sight_profile/malaysia/peninsular_malaysia/melaka/melaka/1556" target="_blank" rel="noopener">Travelfish：The red building</a></li>
+<li>5. <a href="https://asiaforvisitors.com/malaysia/peninsula/melaka/town-square/" target="_blank" rel="noopener">Asia for Visitors：Town Square</a></li>
+<li>6. <a href="https://en.wikipedia.org/wiki/Dutch_Malacca" target="_blank" rel="noopener">維基百科：Dutch Malacca</a></li>
+<li>7. <a href="https://colonialvoyage.com/?p=3080" target="_blank" rel="noopener">Colonial Voyage：Dutch Malacca</a></li>
+<li>8. <a href="https://en.wikipedia.org/wiki/Flor_de_la_Mar" target="_blank" rel="noopener">維基百科：Flor de la Mar</a></li>
+<li>9. <a href="https://biblioasia.nlb.gov.sg/vol-19/issue-1/apr-jun-2023/portuguese-legacy-southeast-asia" target="_blank" rel="noopener">BiblioAsia 2023：Portugal's Linguistic Legacy in Southeast Asia</a></li>
+<li>10. <a href="https://en.wiktionary.org/wiki/meja" target="_blank" rel="noopener">Wiktionary：meja</a></li>
+<li>11. <a href="https://en.wikipedia.org/wiki/Portuguese_Settlement,_Malacca" target="_blank" rel="noopener">維基百科：Portuguese Settlement, Malacca</a></li>
+<li>12. <a href="https://www.thestar.com.my/lifestyle/travel/2024/07/15/melaka039s-san-pedro-festival-celebrates-identity-culture-and-fishing-heritage" target="_blank" rel="noopener">The Star 2024：San Pedro Festival</a></li>
+<li>13. <a href="https://en.wikipedia.org/wiki/Crown_Colony_of_Malacca" target="_blank" rel="noopener">維基百科：Crown Colony of Malacca</a></li>
+<li>14. <a href="https://en.wikipedia.org/wiki/Straits_Settlements" target="_blank" rel="noopener">維基百科：Straits Settlements</a></li>
+<li>15. <a href="https://www.britannica.com/place/Melaka-Malaysia" target="_blank" rel="noopener">Britannica：Melaka</a></li>
+<li>16. <a href="https://www.nst.com.my/amp/news/2016/08/168980/shedding-light-historic-monument" target="_blank" rel="noopener">NST 2016：Padang Pahlawan</a></li>
+<li>17. <a href="https://escholarship.org/uc/item/67q2984p" target="_blank" rel="noopener">Teoh 2015（eScholarship）</a></li>
+<li>18. <a href="https://en.wikipedia.org/wiki/Tan_Chay_Yan" target="_blank" rel="noopener">維基百科：Tan Chay Yan</a></li>
+<li>19. Balthasar Bort，<a href="https://www.sabrizain.org/malaya/library/bort.pdf" target="_blank" rel="noopener">Report on Malacca (1678)</a></li>
+</ul></div></details>
+<p class="r-note">年代與事件另見<a href="#melaka">攻略分頁的馬六甲歷史</a>、<a href="#r-modern">鄭和分頁的近代發展</a>。</p>
+</section></div>
+</div>
+<div id="r-tip" role="status"></div></main>
 <script>
 (function(){
-var bar=document.getElementById('bar'),gv=document.getElementById('view-guide'),rv=document.getElementById('view-report'),nv=document.getElementById('view-nyonya'),subs={n:document.getElementById('sub-nyonya'),g:document.getElementById('sub-guide'),r:document.getElementById('sub-report')},tabs={n:document.getElementById('tab-nyonya'),g:document.getElementById('tab-guide'),r:document.getElementById('tab-report')},cur='g',links=[],secs=[];
-function vOf(h){return h==='#report'||h.indexOf('#r-')===0?'r':h==='#nyonya'||h.indexOf('#n-')===0?'n':'g'}
-function setView(v){cur=v;gv.hidden=v!=='g';rv.hidden=v!=='r';nv.hidden=v!=='n';['g','r','n'].forEach(function(k){subs[k].hidden=v!==k;tabs[k].classList.toggle('cur',v===k)});
+var bar=document.getElementById('bar'),gv=document.getElementById('view-guide'),rv=document.getElementById('view-report'),nv=document.getElementById('view-nyonya'),cv=document.getElementById('view-colonial'),subs={c:document.getElementById('sub-colonial'),n:document.getElementById('sub-nyonya'),g:document.getElementById('sub-guide'),r:document.getElementById('sub-report')},tabs={c:document.getElementById('tab-colonial'),n:document.getElementById('tab-nyonya'),g:document.getElementById('tab-guide'),r:document.getElementById('tab-report')},cur='g',links=[],secs=[];
+function vOf(h){return h==='#report'||h.indexOf('#r-')===0?'r':h==='#nyonya'||h.indexOf('#n-')===0?'n':h==='#colonial'||h.indexOf('#c-')===0?'c':'g'}
+function setView(v){cur=v;gv.hidden=v!=='g';rv.hidden=v!=='r';nv.hidden=v!=='n';cv.hidden=v!=='c';['g','r','n','c'].forEach(function(k){subs[k].hidden=v!==k;tabs[k].classList.toggle('cur',v===k)});
  links=[].slice.call(subs[v].querySelectorAll('a'));secs=links.map(function(a){return document.querySelector(a.getAttribute('href'))});}
 function route(scroll){var h=location.hash,v=vOf(h),changed=v!==cur;setView(v);
- var t=null;if(h&&h!=='#guide'&&h!=='#report'&&h!=='#nyonya'){try{t=document.querySelector(h)}catch(e){}}
- if(t){var d=t.closest('details');if(d)d.open=true;t.scrollIntoView()}else if(scroll||changed||h==='#guide'||h==='#report'||h==='#nyonya'){var b=document.documentElement,s=b.style.scrollBehavior;b.style.scrollBehavior='auto';scrollTo(0,0);b.style.scrollBehavior=s}
+ var t=null;if(h&&h!=='#guide'&&h!=='#report'&&h!=='#nyonya'&&h!=='#colonial'){try{t=document.querySelector(h)}catch(e){}}
+ if(t){var d=t.closest('details');if(d)d.open=true;t.scrollIntoView()}else if(scroll||changed||h==='#guide'||h==='#report'||h==='#nyonya'||h==='#colonial'){var b=document.documentElement,s=b.style.scrollBehavior;b.style.scrollBehavior='auto';scrollTo(0,0);b.style.scrollBehavior=s}
  f();}
 function f(){var d=document.documentElement,m=d.scrollHeight-d.clientHeight;bar.style.width=(m>0?d.scrollTop/m*100:0)+'%';var c=0;secs.forEach(function(s,i){if(s&&s.getBoundingClientRect().top<140)c=i});if(m>0&&d.scrollTop>=m-2)c=links.length-1;links.forEach(function(a,i){var on=i===c;a.classList.toggle('on',on);if(on&&innerWidth<=860&&a.parentNode.scrollWidth>a.parentNode.clientWidth){a.parentNode.scrollLeft=a.offsetLeft-a.parentNode.offsetLeft-40}})}
 addEventListener('scroll',f,{passive:true});addEventListener('resize',f);addEventListener('hashchange',function(){route(false)});route(false);
@@ -973,7 +1106,7 @@ box.querySelector('.r-btns').addEventListener('click',function(e){var b=e.target
 var tip=document.getElementById('r-tip');
 function show(el,x,y){tip.textContent=el.getAttribute('data-tip');tip.style.display='block';var w=tip.offsetWidth;tip.style.left=Math.max(6,Math.min(innerWidth-w-6,x-w/2))+'px';tip.style.top=Math.max(6,y-38)+'px'}
 function hide(){tip.style.display='none'}
-[rv,nv].forEach(function(rv){rv.addEventListener('mousemove',function(e){var el=e.target.closest('[data-tip]');el?show(el,e.clientX,e.clientY):hide()});rv.addEventListener('mouseleave',hide);
+[rv,nv,cv].forEach(function(rv){rv.addEventListener('mousemove',function(e){var el=e.target.closest('[data-tip]');el?show(el,e.clientX,e.clientY):hide()});rv.addEventListener('mouseleave',hide);
 rv.addEventListener('focusin',function(e){var el=e.target.closest('[data-tip]');if(el){var r=el.getBoundingClientRect();show(el,r.left+r.width/2,r.top)}});rv.addEventListener('focusout',hide);
 rv.addEventListener('click',function(e){var el=e.target.closest('[data-tip]');el?show(el,e.clientX,e.clientY):hide()});});addEventListener('scroll',hide,{passive:true});
 })();
